@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('main')
+@section('content')
     <div class="container">
         <a href="index.html" type="button" class="btn btn-secondary my-2">
             <i class="bi bi-arrow-left"></i>

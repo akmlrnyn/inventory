@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('main')
+@section('content')
 <div class="container">
     <div class="row justify-content-center">
         <!-- card -->
@@ -37,8 +37,8 @@
                                 <label class="input-group-text" for="inputGroupSelect02">PIC Ruangan</label>
                                 <select class="form-select" id="inputGroupSelect02" name="user_id">
                                     <option selected>Pilih...</option>
-                                    @foreach ($user as $item)
-                                    <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                    @foreach ($ruangan as $item)
+                                    <option value="{{ $item->id }}">{{ $item->user->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
